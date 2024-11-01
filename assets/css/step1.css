@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  place-items: center;
+  background-color: rgb(28,40,68);
+}
+.container{
+  padding-inline:32px ;
+}
+
+.header {
+  padding: 12px 12px 12px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  padding: 24px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.header-score {
+  padding: 10px 22px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.header-score h6 {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 1.5625px;
+  color: rgba(42, 69, 194, 1);
+}
+
+.header-score h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: rgba(86, 84, 104, 1);
+}
+
+.game-container {
+  background: url(/assets/img/reverse-triangle.svg) no-repeat center;
+  width: 312px;
+  height: 282px ;
+  margin-top: 105px;
+  margin-bottom: 139px;
+
+}
+.game-btns{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 15px;
+}
+
+
+.rules {
+  display: flex;
+  justify-content: center;
+}
+
+.rules button {
+  background-color: rgb(28,40,68);
+  color: #FFFFFF;
+  padding: 11px 37px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+}
