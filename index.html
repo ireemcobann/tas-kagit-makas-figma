@@ -28,14 +28,43 @@
       </div>
       <div class="game-container">
         <div class="game-btns">
-          <a id="kagitBtn" href="#"><img src="assets/img/paper.svg" alt="" /></a>
-          <a id="makasBtn" href="#"><img src="assets/img/scissors.svg" alt="" /></a>
-          <a id="tasBtn" href="#"><img src="assets/img/rock.svg" alt="" /></a>
+          <button id="kagitBtn">
+            <img src="assets/img/paper.svg" alt="Paper" />
+          </button>
+          <button id="makasBtn">
+            <img src="assets/img/scissors.svg" alt="Scissors" />
+          </button>
+          <button id="tasBtn">
+            <img src="assets/img/rock.svg" alt="Rock" />
+          </button>
         </div>
       </div>
-      <div class="rules">
-        <button class="rules-btn">RULES</button>
+      <div class="result-screen-container">
+        <div class="resultScreen">
+          <div>
+            <img id="user-choice" src="assets/img/paper.svg" alt="User choice" />
+            <h4>You PICKED</h4>
+          </div>
+          <div>
+            <img id="computer-choice" src="assets/img/rock.svg" alt="Computer choice" />
+            <h4>THE HOUSE PICKED</h4>
+          </div>
+        </div>
+        <div class="resultText">
+          <h1>YOU WIN</h1>
+          <button>PLAY AGAIN</button>
+        </div>
       </div>
     </div>
+
+    <button class="rules-btn">RULES</button>
+    <dialog class="rules">
+      <div id="dialogContent"></div>
+
+    </dialog>
+
   </body>
 </html>
+
+
+

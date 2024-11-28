@@ -23,10 +23,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 3px solid #FFFFFF4A ;
+  margin-top: 32px;
 }
 
 .header h1 {
-  padding: 24px;
   font-size: 21px;
   font-weight: 700;
   line-height: 16px;
@@ -71,18 +72,150 @@ body {
   justify-content: center;
   column-gap: 40px;
   row-gap: 15px;
+
 }
 
+#kagitBtn {
+  background-color: inherit;
+  border: none;
+}
+#tasBtn {
+  background-color: inherit;
+  border: none;
+}
+
+#makasBtn {
+  background-color: inherit;
+  border: none;
+}
 
 .rules {
-  display: flex;
-  justify-content: center;
+  background-color: #FFFFFF;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
+}
+#dialogContent {
+  padding: 10px 35px ;
+  margin-block: 20px;
+  position: relative;
+  height: 100%;
 }
 
-.rules button {
+.rules img {
+  display: flex;
+  margin: 0 auto;
+}
+
+.rules h1 {
+  
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3B4262;
+  align-items: center;
+  margin-bottom: 113px;
+  display: flex;
+  justify-content: center;
+  padding-top: 95px;
+
+  
+}
+
+.rules-btn {
   background-color: rgb(28,40,68);
   color: #FFFFFF;
   padding: 11px 37px;
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
 }
+
+.rules-btn:hover{
+  background-color: #FFFFFF;
+  color: #3B4262;
+}
+
+.resultScreen {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 99px;
+}
+.resultScreen img {
+  margin-bottom: 17px;
+}
+.resultScreen h4 {
+font-size: 15px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 1.875px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+
+}
+
+.resultText h1 {
+font-size: 56px;
+font-weight: 700;
+line-height: 67.2px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+margin-bottom: 16px;
+
+}
+
+.resultText button {
+font-size: 16px;
+font-weight: 600;
+line-height: 19.2px;
+letter-spacing: 2.5px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #3B4262;
+padding: 15px 60px;
+display: flex;
+margin: 0 auto;
+margin-bottom: 16px;
+border-radius: 8px;
+border: none;
+
+}
+
+.result-screen-container {
+  display: none;
+}
+
+.closeBtn {
+  background-color: inherit;
+  border: none;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 0px;
+
+}
+
+
+
+@media (width > 1200px) {
+  .rules {
+    width: 400px;
+    height: 415px;
+    max-width: inherit;
+    max-height: inherit;
+  }
+}
+
+
